@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:hardware_flutter/101/colors_learn.dart';
+import 'package:hardware_flutter/101/icon_learn.dart';
 import 'package:hardware_flutter/101/app_bar.dart';
 import 'package:hardware_flutter/101/button_learn.dart';
 import 'package:hardware_flutter/101/container.sized_box_learn.dart';
@@ -21,12 +23,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         appBarTheme: const AppBarTheme(
           centerTitle: true,
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.transparent,
           elevation: 0,
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),
-      home: const AppBarView(),
+      home: ColorsLearn(),
     );
   }
 }
