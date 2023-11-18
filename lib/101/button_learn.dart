@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hardware_flutter/101/stateless.learn.dart';
 
 //BuildContext:Global bir objedir.
 
@@ -94,6 +95,7 @@ class ButtonLearn extends StatelessWidget {
                 ),
               ),
             ),
+            const CustomContainer()
           ],
         ));
   }
