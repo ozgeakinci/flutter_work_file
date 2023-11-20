@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TextLearnView extends StatelessWidget {
   TextLearnView({super.key});
@@ -10,15 +11,10 @@ class TextLearnView extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Text(
-            'Welcome $name ${name.length}',
-            maxLines: 3,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 25,
-              overflow: TextOverflow.clip,
-            ),
-          ),
+          Text('Welcome $name ${name.length}',
+              maxLines: 3,
+              style: GoogleFonts.roboto(
+                  textStyle: const TextStyle(color: Colors.blue))),
           Text(
             'Welcome $name ${name.length}',
             maxLines: 3,

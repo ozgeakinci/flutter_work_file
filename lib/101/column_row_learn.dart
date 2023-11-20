@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class ColumnRowLearn extends StatelessWidget {
@@ -13,6 +15,8 @@ class ColumnRowLearn extends StatelessWidget {
           Expanded(
             flex: 4,
             child: Row(
+              mainAxisSize:
+                  MainAxisSize.min, //bu değer default olarak max gelmektedir.
               children: [
                 Expanded(
                   child: Container(
@@ -45,12 +49,13 @@ class ColumnRowLearn extends StatelessWidget {
           //responsive tasarım için her zaman alanları Expanded ile ayırmak gerekir.
           //Buradaki alanda height 300 verildi sabit değer her zaman hesaba katılarak flex alanlar ona göre alanlarını belirler
           const SizedBox(
-              height: 300,
+              height: ProjectContainerSize.cartHeight,
               child: Column(
                 children: [
                   Expanded(child: Text('data')),
                   Expanded(child: Text('data')),
                   Expanded(child: Text('data')),
+                  Spacer(),
                   Expanded(child: Text('data')),
                 ],
               ))
@@ -58,4 +63,8 @@ class ColumnRowLearn extends StatelessWidget {
       ),
     );
   }
+}
+
+class ProjectContainerSize {
+  static const double cartHeight = 200;
 }

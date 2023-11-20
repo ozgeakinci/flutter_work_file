@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hardware_flutter/101/core/random_image.dart';
+import 'package:hardware_flutter/core/random_image.dart';
 
 class ListStyleLearn extends StatelessWidget {
   const ListStyleLearn({Key? key}) : super(key: key);
