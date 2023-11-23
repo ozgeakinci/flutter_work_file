@@ -14,13 +14,17 @@ import 'package:hardware_flutter/101/button_learn.dart';
 import 'package:hardware_flutter/101/container.sized_box_learn.dart';
 import 'package:hardware_flutter/101/image_learn.dart';
 import 'package:hardware_flutter/101/indicator_learn.dart';
+import 'package:hardware_flutter/101/life_cycle.dart';
 import 'package:hardware_flutter/101/list_style_learn.dart';
+import 'package:hardware_flutter/101/page_view_learn.dart';
 import 'package:hardware_flutter/101/stack_learn.dart';
+import 'package:hardware_flutter/101/statefull_learn.dart';
 import 'package:hardware_flutter/demos/demo.dart';
 import 'package:hardware_flutter/101/padding_learn.dart';
 import 'package:hardware_flutter/101/scaffold_learn.dart';
 import 'package:hardware_flutter/101/stateless.learn.dart';
 import 'package:hardware_flutter/101/text_learn_view.dart';
+import 'package:hardware_flutter/demos/stack_demo_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,6 +52,8 @@ class MyApp extends StatelessWidget {
             systemOverlayStyle: SystemUiOverlayStyle.light,
           ),
         ),
-        home: const StackLearn());
+        home: const LifeCycle(
+          message: 'Özge',
+        ));
   }
 }
